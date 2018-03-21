@@ -8,6 +8,7 @@
     tools:context="com.example.user.surround.MainActivity">
 
     <TextView
+        android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,5 +17,5 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below=""/>
+        android:layout_below="@id/firstText"/>
 </RelativeLayout>
