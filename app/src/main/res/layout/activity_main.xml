@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,8 +13,19 @@
         android:text="Hello World!"
         />
 
-    <Button
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/firstText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/firstText"/>
+        android:id="@+id/loginDetailsText"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginDetailsEditText"
+            android:inputType="textEmailAddress"
+            android:hint="Email - id"/>
+
+    </android.support.design.widget.TextInputLayout>
 </RelativeLayout>
